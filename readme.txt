@@ -1,7 +1,7 @@
 Japanese Google News Article Scraper
 
 What is it?
-Python code that should get Google news articles that are from Japan.
+Python code that gets Google news articles from Japan.
 (If you're not blocked by Google)
 
 Features -
