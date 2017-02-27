@@ -18,8 +18,8 @@ def parse_urls(soup):
 
     for a in soup.find_all('a', href=True):
         link = a['href']
-        
-        if "//www.google.com/policies/terms/" in link:
+
+        if "support.google.com/websearch/answer/86640" in link:
             print("IP Address has been blocked by Google")
             sys.exit(0)
 
@@ -90,6 +90,7 @@ def get_article_page(link):
     global ARTICLES
     ARTICLES[ID] = article
     print("Link #"+ str(ID) + " Done\n")
+    articles_to_json()
 
 def get_content(soup1):
     """ Retrieves contents of the article """
@@ -207,7 +208,6 @@ def start_scrape():
     for number in range(0,990,10):
         run(url+str(number))
         # url_no += 1
-    articles_to_json()
     print("Done!")
 
 start_scrape()
