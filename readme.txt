@@ -11,8 +11,13 @@ the articles as a JSON file.
 address got blocked I have left the commented code in)
 
 How to run -
-Make sure you have python installed.
-then run command "python news.py".
+Make sure you have python installed. (I wrote this using python 3)
+
+then run command "python3 news.py" or "python news.py".
+
+You may also need to install BeautifulSoup4, you can get that with the command
+"pip install beautifulsoup4".
+
 This will then start to getting data from news articles.
 
 Credit -
